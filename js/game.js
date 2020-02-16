@@ -41,7 +41,7 @@ function endGame() {
   let totalPlayedMillis = getTimestamp() - firstHitTime;
   let totalPlayedSeconds = Number(totalPlayedMillis / 1000).toPrecision(3);
   $("#total-time-played").text(totalPlayedSeconds);
-
+$("#total_miss").text(miss);
   $("#win-message").removeClass("d-none");
 
 }
@@ -57,7 +57,7 @@ function handleClick(event) {
     miss = miss + 1;
     $(event.target).text("-1");
   }
-  // TODO: как-то отмечать если мы промахнулись? См CSS класс .miss
+ 
 }
 
 function init() {
