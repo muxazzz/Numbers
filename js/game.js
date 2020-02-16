@@ -43,7 +43,9 @@ function endGame() {
   $("#total-time-played").text(totalPlayedSeconds);
 $("#total_miss").text(miss);
   $("#win-message").removeClass("d-none");
-
+$("#button-start").hide('fast', function() {
+  
+});
 }
 
 function handleClick(event) {
